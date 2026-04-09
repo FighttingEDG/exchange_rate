@@ -22,4 +22,9 @@
   - Maven / Gradle（多模块项目）
   - Docker 多阶段构建
   - Kubernetes：Deployment、Service、CronJob
-
+## 运行顺序
+1. common（只需编译即可）
+2. rate-fetcher（产生数据）
+3. rate-consumer（消费数据写数据库）
+4. rate-api（提供 API 查询数据）
+5. gateway（路由请求到 API）

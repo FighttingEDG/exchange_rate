@@ -8,9 +8,19 @@
         <version>3.5.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <!--  申明子模块  -->
+    <modules>
+        <module>common</module>
+        <module>gateway</module>
+        <module>rate-api</module>
+        <module>rate-consumer</module>
+        <module>rate-fetcher</module>
+    </modules>
     <groupId>shop.shanjunwei</groupId>
     <artifactId>exchange_rate_end</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <!-- 聚合父工程，打包方式必须是pom -->
+    <packaging>pom</packaging>
     <name>exchange_rate_end</name>
     <description>exchange_rate_end</description>
     <url/>
