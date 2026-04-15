@@ -1,3 +1,12 @@
 spring:
   application:
     name: rate-fetcher
+
+exchange:
+  rates:
+    - CNY-USD
+    - CNY-GBP
+    - CNY-EUR
+  mode: FAKE          # FAKE=模拟模式, REAL=真实模式
+  apiUrl: https://data.fixer.io/api/latest
+  accessKey: 7e18cd68d8e73020e766576f7c6237cf
